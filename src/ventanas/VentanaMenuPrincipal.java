@@ -73,6 +73,12 @@ public class VentanaMenuPrincipal extends JFrame implements ActionListener {
                         ventanaOpciones.setVisible(true);
                         dispose();
                         break;
+                    case 1:
+                        System.out.println("opcion 1 temperatura");
+                        VentanaOpcionesTemperatura ventanaOpciones2 = new VentanaOpcionesTemperatura();
+                        ventanaOpciones2.setVisible(true);
+                        dispose();
+                        break;
                 
                     default:
                         break;

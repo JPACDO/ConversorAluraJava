@@ -2,6 +2,8 @@ package logica;
 
 public class Convertir {
 
+
+    ////////////MONEY
     public static String toSoles(Double valorOriginal, Double factor){
         return " S/" + Calculo(valorOriginal,factor) + " Soles";
     }
@@ -24,5 +26,38 @@ public class Convertir {
 
     private static Double Calculo(Double valorOriginal, Double factor){
         return valorOriginal*factor;
+    }
+
+    /////////////TEMPERATURE
+    public static double Celcius_to_Fahrenheit(double Celcius){
+        double Fahrenheit = (Celcius * 9/5) + 32;
+        return Fahrenheit;
+    }
+    // Celcius to Kelvin
+    public static double Celcius_to_Kelvin(double Celcius){
+        double Kelvin = Celcius + 273.15;
+        return Kelvin;
+    }
+
+    // Fahrenheit to Celcius
+    public static double Fahrenheit_to_Celcius(double Fahrenheit){
+        double Celcius = (Fahrenheit - 32) * 5/9;
+        return Celcius;
+    }
+    // Fahrenheit to Kelvin
+    public static double Fahrenheit_to_Kelvin(double Fahrenheit){
+        double Kelvin = (Fahrenheit - 32) * 5/9 + 273.15;
+        return Kelvin;
+    }
+
+    // Kelvin to Celcius
+    public static double Kelvin_to_Celcius(double Kelvin){
+        double Celcius = Kelvin - 273.15;
+        return Celcius;
+    }
+    // Kelvin to Fahrenheit
+    public static double Kelvin_to_Fahrenheit(double Kelvin){
+        double Fahrenheit = (Kelvin - 273.15) * 9/5 + 32;
+        return Fahrenheit;
     }
 }

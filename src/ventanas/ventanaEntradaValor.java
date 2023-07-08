@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class ventanaEntradaValor {
 
     public double getValue() throws Exception{
-        String valor = JOptionPane.showInputDialog("Ingresa a cantidad de dinero a convertir");
+        String valor = JOptionPane.showInputDialog("Ingresa la cantidad  a convertir");
         try {
             return  Double.parseDouble(valor);
 
