@@ -83,10 +83,10 @@ public class VentanaOpcionesTemperatura extends JFrame implements ActionListener
                         resultado = Mensaje(Convertir.Kelvin_to_Celcius(VentanaMenuPrincipal.getValorOriginal()), "Celcius");
                         break;
                     case 5:
-                        resultado = Mensaje(Convertir.Kelvin_to_Celcius(VentanaMenuPrincipal.getValorOriginal()), "Celcius");
+                        resultado = Mensaje(Convertir.Kelvin_to_Fahrenheit(VentanaMenuPrincipal.getValorOriginal()), "Fahrenheit");
                         break;
                     default:
-                        resultado = Mensaje(Convertir.Kelvin_to_Fahrenheit(VentanaMenuPrincipal.getValorOriginal()), "Fahrenheit");
+                        resultado = Mensaje(0.0, "0.0");
                         break;
                 }
                 JOptionPane.showMessageDialog(null, resultado, "MESSAGE", JOptionPane.INFORMATION_MESSAGE);
